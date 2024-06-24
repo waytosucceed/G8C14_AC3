@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Class Activity 3</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  
+  <link rel="icon" type="image/x-icon" href="Logo_last.png">
+
+
+  <style>
+        
+
+.correct{
+    background-color: rgb(167, 225, 243);
+    border-radius: 50%;
+    width:100px;
+    height: 50px;
+   font-weight: bold;
+   
+}
+
+
+  </style>
+
+
+
+</head>
+
+
+<body>
+  <audio id="cheers" >
+    <source src="cheers.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="points" src="Points.mp3"></audio>
+  <audio id="fail" src="fail.mp3"></audio>
+  <div class="header" style="width:100%; box-shadow:5px 5px 10px rgb(0, 0, 0); padding-bottom:10px;">
+    <img src="Logo.png" width="5%" style="float:left; margin-top:25px;" class="img-responsive">
+    <span> <img src="header.png" width="30%" height="100px" class="img-responsive"></span>
+</div>
+<br>
+<br>
+  <center>
+    
+  <h1 id="heading" style="font-family: Impact">Lets Revise With The Teacher</h1>
+  <div class="maindiv container" style="padding-top: 50px;">
+
+
+   <p style="font-size: 20px;">Q1.  Girls, please be at ease.<br>
+    ‘At’ in the above sentence is a preposition of:
+
+    <br><br>
+
+    <label id="label1"></label> 
+       <button onclick="func1()" id="btn1" class="correct">Check</button> <br><br>
+
+     Q2.  True and False<br>
+     I was parking my Jeep in the wide backyard of Mr.
+     Thompson’s house when the robbery happened.
+     In the above sentence, ‘in the wide backyard’ is a
+     prepositional phrase.
+     <br><br>
+
+
+     <label id="label2"></label>
+    <button onclick="func2()" id="btn2" class="correct">Check</button>
+     <br> <br>
+
+    Q 3. Fill in the balkans with correct prepositions of place/location:<br>
+    I will be ...... room no. 317 ........... the fourth floor.
+     <br><br>
+
+      
+     <label id="label3"></label>
+    <button onclick="func3()" id="btn3"  class="correct">Check</button>
+     <br> <br>
+
+    Q 4.  Which simple preposition goes with because to form a phrasal preposition?
+     <br> <br>
+ 
+     <label id="label4"></label>
+    <button onclick="func4()" id="btn4" class="correct">Check</button>
+     <br> <br>
+
+
+
+
+    Q 5. In a prepositional phrase can the modifier be an adjective?
+    <br> <br>
+
+
+    <label id="label5"></label> 
+        <button onclick="func5()" id="btn5" class="correct">Check</button> 
+       <br> <br>
+
+  </p> 
+</div>
+  <script>
+    
+           function func1(){
+            document.getElementById('label1').innerHTML="condition<br>“Ease” refers to a state or condition. Here the girls are asked to be in that state or condition."
+            document.getElementById('btn1').style.display="none"
+           }
+
+           function func2(){
+            document.getElementById('label2').innerHTML='True<br>Simply put, prepositional phrases are groups of words that start with a preposition, followed by its object which is a noun and any modifier. A prepositional phrase functions as a preposition in a sentence. They provide additional information about time, location, direction and other relationships.<br>I was parking my Jeep in the wide backyard of Mr. Thompson’s house when the robbery happened.<br>in: preposition<br>Object of the preposition: the backyard<br>Modifier: wide (adjective)'
+            document.getElementById('btn2').style.display="none"
+           
+
+           }
+
+           function func3(){
+            document.getElementById('label3').innerHTML='In and on<br>In in used for enclosed spaces<br>On is used when something or someone is on the top of a certain surface.'
+            document.getElementById('btn3').style.display="none"
+            
+
+           }
+
+           function func4(){
+            document.getElementById('label4').innerHTML='for<br>It makes sense because ‘for’ is commonly used to introduce more information or what a quality, thing, or action relates to.'
+            document.getElementById('btn4').style.display="none"
+          
+
+           }
+
+           function func5(){
+            document.getElementById('label5').innerHTML='Yes<br>Adjectives are a type of modifiers<br>For example:<br>The shrub with big yellow flowers is a new addition to my garden.<br>Preposition: with<br>Object of preposition: flowers<br>Modifiers: big (size), yellow (colour)'
+            document.getElementById('btn5').style.display="none"
+          
+
+           }
+
+  </script>
+</center>
+</body>
+</html>
